@@ -31,8 +31,19 @@
   "subPackages": [{
     "root": "subpkg",
     "pages": [{
-      "path": "goods_detail/goods_detail"
-    }]
+        "path": "goods_detail/goods_detail"
+      },
+      {
+        "path": "goods_list/goods_list",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": true,
+          "onReachBottomDistance": 100,
+          "backgroundColor": "#eee"
+        }
+
+      }
+    ]
   }],
   "tabBar": {
     "selectedColor": "#c00000",
@@ -66,7 +77,11 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "黑马邮购",
     "navigationBarBackgroundColor": "#c00000",
-    "backgroundColor": "#F8F8F8"
+    "backgroundColor": "#F8F8F8",
+    "usingComponents": {
+      "van-card": "/wxcomponents/dist/card/index"
+    },
+    "ignoreDevUnusedFiles": false
   },
   "uniIdRouter": {}
 }

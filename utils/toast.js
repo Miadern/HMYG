@@ -22,4 +22,11 @@ toast.cg = function(title, duration = 3000) {
   })
 }
 
+toast.loading = function(title) {
+  uni.showToast({
+    title,
+    icon: "loading",
+  })
+}
+
 export default toast
